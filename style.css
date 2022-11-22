@@ -1,0 +1,104 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+body{line-height:1.231;font-size:12px;color:#333;font-family:Arial,Tahoma,sans-serif}
+ul,ol,dl,menu,li{list-style:none}
+object{outline:0}
+button{border:0 none;background-color:transparent;cursor:pointer}
+h1,h2,h3,h4,h5,h6{font-size:12px}
+a{color:#333;cursor:pointer;text-decoration:none}
+a:focus{-moz-outline-style:none}
+input,select,textarea{vertical-align:middle;font-family:inherit}
+form{margin:0;padding:0}
+fieldset{min-width:0;margin:0;padding:0;border:none 0 transparent}
+img{vertical-align:top;border:0 none}
+textarea{color:#333;border:1px solid #bebdbd;border-color:#bebdbd #d4d3d3 #d4d3d3 #bebdbd;background-color:#fff;padding:2px 3px 0 2px}
+select{padding:0 1px 0 0;font-size:inherit}option{padding-right:.7em}
+iframe{display:block}
+address,caption,cite,code,dfn,em,var,i,dfn{font-style:normal}
+html, body {
+  height: 100%;
+  width: 100%;  
+  overflow: hidden;
+}
+body{
+  position:relative;
+  background:url(img/cludysky.jpg) 50% no-repeat; background-size:cover;
+}
+.hidden{display:none;}
+img{
+  position:absolute; top:50%; left:0; z-index:-1;
+  transform:translate(0, -50%);
+  max-width:50vw;
+}
+#login-form {text-align:center;}
+#login-form input{
+  border:none; border-bottom:1px solid #000; outline:transparent;
+  background:none;
+  width:200px; height:28px; 
+  font-size:14px;
+}
+#login-form button{
+  border:none; 
+  background:none;
+  height:28px; 
+  font-size:14px;
+}
+#greeting{
+  font-size:16px; text-align:center;
+}
+#clock{
+  margin:50px 0; line-height:1;
+  text-align:center; font-size:70px; color:#fff;
+}
+#quote{
+  position: absolute; bottom: 100px; left: 0; right: 0;
+  text-align: center;
+  font-size: 14px;
+}
+#weather{
+  position: absolute; top: 30px; right:30px;
+  font-size:14px; color:#fff;
+}
+#todo{
+  position: absolute; top: 300px; right:100px;
+  width:30vw;
+}
+#todo-form{
+}
+#todo-form input{
+  border:none; border-bottom:1px solid #000; outline:transparent;
+  background:none;
+  width:100%; height:28px; 
+  font-size:14px;
+}
+#todo-list{
+  margin:30px 0 0;
+  background-color: rgba(255,255,255,.6);
+  padding: 10px;
+  border-radius: 10px;
+}
+#todo-list li{
+  list-style:circle; list-style-position:inside;
+  max-width:300px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;
+  font-size:14px;
+}
+#todo-list button{
+  display:inline-block; position:relative;
+  margin-left:5px;
+  width:16px; height:16px; vertical-align:middle;
+  font-size:0;
+}
+#todo-list button:before, #todo-list button:after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background: #fff;
+  height: 100%;
+  width: 2px;
+}
+#todo-list button:after{
+  transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
