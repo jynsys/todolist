@@ -1,5 +1,10 @@
+// 1. 각 태그 변수 선언
+const quoteText = document.querySelector("#quotes .quote");
+const quoteAuthor = document.querySelector("#quotes .author");
+
+// 2. 명언 배열 선언
 const quotes = [
-    {
+  {
         quote: "삶이 있는 한 희망은 있다",
         author: "-키케로"
     },
@@ -39,11 +44,13 @@ const quotes = [
         quote: "피할수 없으면 즐겨라",
         author: "-로버트 엘리엇"
     }
-]
+];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+// 3. 오늘명언 변수 랜덤 호출(명언배열 전체 수*랜덤수를 내림한 수)
+const i = Math.floor(Math.random() * quotes.length);
+// 4. 오늘명언 변수 랜덤 호출
+const todayQuote = quotes[i];
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+// 5. 명언 태그에 오늘명언 text로 넣기
+quoteText.innerText = todayQuote.quote;
+quoteAuthor.innerText = todayQuote.author;
